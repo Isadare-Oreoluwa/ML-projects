@@ -23,7 +23,7 @@ Welcome to my collection of Machine Learning projects! This repository features 
 - *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Data.zip)  
 
 ## All Projects  
-Explore all my machine learning projects by visiting the *[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/main/Projects)*. Each project includes a detailed report, code, and datasets used for analysis.
+Explore all my machine learning projects by visiting the *[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects)*. Each project includes a detailed report, code, and datasets used for analysis.
 
 ## Getting Started  
 
