@@ -1,54 +1,86 @@
-# Machine Learning Projects
+# Leveraging Machine Learning for Predicting Agricultural Trade Flows
 
-## Table of Contents
-1. [Introduction](#introduction)  
-2. [Featured Projects](#featured-projects)  
-   - [Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners](#predicting-agricultural-trade-flow-between-nigeria-and-its-trading-partners)  
-3. [All Projects](#all-projects)  
-4. [Getting Started](#getting-started)  
-5. [Contact](#contact)  
+## Overview
+This project demonstrates the application of machine learning techniques to predict agricultural trade flows between Nigeria and its trading partners. It identifies key factors influencing trade and evaluates the performance of various algorithms in predicting trade patterns. Users are encouraged to explore the code and customize it to suit their data and file paths.
 
-## Introduction  
-Welcome to my collection of Machine Learning projects! This repository features a range of machine learning applications, including predictive modeling, sentiment analysis, and data-driven insights. Each project demonstrates my proficiency in data preprocessing, model development, evaluation, and extracting actionable insights.
+## Dataset Description
+The analysis uses a CSV file containing trade-related data, including:  
+- **Trade Metrics:** Import and export values in USD.  
+- **Economic Indicators:** GDP and exchange rates.  
+- **Demographics:** Population data for Nigeria and its trading partners.  
+- **Geographical Factors:** Distance, landlocked status, and shared languages.
 
-## Featured Projects  
+Ensure the CSV file is correctly placed and referenced in the code for successful execution.
 
-### Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners  
-- *Description:* A comprehensive project leveraging machine learning techniques to predict agricultural trade flows between Nigeria and its key trading partners. This project provides insights into how factors like exchange rate volatility and trade openness impact trade patterns.  
-- *Key Highlights:*  
-  - *Dataset:* Trade data spanning 2010–2020, featuring variables like export volumes, trading partners, and exchange rates.  
-  - *Machine Learning Models:* Linear Regression, Random Forest, and Gradient Boosting for predictive analysis.  
-  - *Results:* Achieved a predictive accuracy of 85% and identified critical factors influencing trade.  
-- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Report.pdf)  
-- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Data.zip)  
+## Machine Learning Approach
+### Algorithms Used:
+- Linear Regression (including Ridge and Lasso variants)  
+- Random Forest  
+- Gradient Boost Regression  
+- Neural Networks  
 
-## All Projects  
-Explore all my machine learning projects by visiting the *[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/main/Projects)*. Each project includes a detailed report, code, and datasets used for analysis.
+### Evaluation Metrics:
+- R-squared (R²)  
+- Mean Squared Error (MSE)  
+- Root Mean Squared Error (RMSE)  
 
-## Getting Started  
+## Setup and Usage
+### Prerequisites:
+- Python 3.x installed on your system.  
+- Required libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`.  
 
-- *Viewing the Projects:*  
-   - Browse the repository to explore different machine learning projects.  
-   - Click on individual folders to view the code, datasets, and reports directly on GitHub or download them for offline use.  
+### Steps:
+1. **Clone this Repository:**  
+   Download the project files, including the scripts and CSV data.  
+   ```bash
+   git clone https://github.com/Isadare-Oreoluwa/ml-projects.git
+   cd ml-projects
+   ```
 
-- *How to Download Files:
-  If you're unable to download individual files directly from GitHub, you can follow these alternative methods:
-  - *Download the Entire Repository as a ZIP File:*  
-    1. Go to the repository page.  
-    2. Click the green **Code** button at the top right of the page.  
-    3. Select **Download ZIP** from the dropdown menu.  
-    4. Once the ZIP file is downloaded, unzip it to access all the files.  
+2. **Install Dependencies:**  
+   Manually install the required libraries:  
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib seaborn
+   ```
 
-  - *Clone the Repository Using Git:*  
-    If Git is installed on your system:  
-    1. Copy the repository URL from the **Code** button (the HTTPS link).  
-    2. Open your terminal or command prompt.  
-    3. Type the following command:  
-       ```bash  
-       git clone https://github.com/Isadare-Oreoluwa/ML-projects.git  
-       ```  
-    4. This will download all the contents of the repository to your local machine.  
+3. **Adjust File Locations:**  
+   - Open the analysis and visualization scripts in a text editor.  
+   - Locate where the CSV file is referenced.  
+   - Update the file path to match the location of your dataset.  
 
-## Contact  
+   Example:  
+   If your dataset is stored in `C:/datasets/trade_data.csv`, change:  
+   ```python
+   data = pd.read_csv('data/trade_data.csv')
+   ```
+   To:  
+   ```python
+   data = pd.read_csv('C:/datasets/trade_data.csv')
+   ```
 
-For any questions or inquiries, feel free to reach out to me via [email](mailto:isadare.ore@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/oreoluwa-isadare).
+4. **Run the Scripts:**  
+   Execute the analysis script to process the data and generate results:  
+   ```bash
+   python analysis.py
+   ```
+   For visualizations, run:  
+   ```bash
+   python visualisation.py
+   ```
+
+## Results and Insights
+- **Best Model for Imports:** Random Forest  
+  - R-squared: 0.75  
+  - MSE: \(3.6 \times 10^{15}\)  
+- **Key Factors Influencing Trade:**  
+  - GDP and population of trading partners.  
+  - Exchange rates and distance.  
+
+
+## Notes
+- The code is provided as a starting point; users should edit paths to fit their local environment.
+- For any issues or questions, feel free to raise an issue in this repository or reach out via email.
+
+## References
+- **Report:** World Integrated Trade Solutions (WITS), World Development Indicators (WDI).  
+- **Code and Data:** [GitHub Link](#).
