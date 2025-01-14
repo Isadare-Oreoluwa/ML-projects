@@ -14,11 +14,12 @@ Welcome to my collection of Machine Learning projects! This repository features 
 ## Featured Projects  
 
 ### Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners  
-- *Description:* A comprehensive project leveraging machine learning techniques to predict agricultural trade flows between Nigeria and its key trading partners. This project provides insights into how factors like exchange rate volatility and trade openness impact trade patterns.  
+- *Description:* A comprehensive project leveraging machine learning techniques to predict agricultural trade flows between Nigeria and its key trading partners. This project explores how factors such as agricultural import/export values, GDP, population, and other features influence trade patterns. By analyzing data from 1996 to 2021, the project provides actionable insights to enhance Nigeria's agricultural trade policies and competitiveness. 
 - *Key Highlights:*  
-  - *Dataset:* Trade data spanning 2010–2020, featuring variables like export volumes, trading partners, and exchange rates.  
-  - *Machine Learning Models:* Linear Regression, Random Forest, and Gradient Boosting for predictive analysis.  
-  - *Results:* Achieved a predictive accuracy of 85% and identified critical factors influencing trade.  
+  - *Dataset:* Trade data spanning 1996–2021 from 70 trading partners across Africa, Europe, Asia, and the Americas.
+  - *Machine Learning Models:* Linear Regression (with Ridge and Lasso variants), Random Forest, Gradient Boost Regression, Neural Networks.  
+  - *Results:* Random Forest achieved the highest predictive accuracy with an R-squared of 75% for import predictions.
+               Identified key features driving trade flows, such as GDP and population of trading partners, exchange rates, and distance.
 - *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Report.pdf)  
 - *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
 
