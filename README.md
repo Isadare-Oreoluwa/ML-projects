@@ -20,7 +20,7 @@ Welcome to my collection of Machine Learning projects! This repository features 
   - *Machine Learning Models:* Linear Regression (with Ridge and Lasso variants), Random Forest, Gradient Boost Regression, Neural Networks.  
   - *Results:* Random Forest achieved the highest predictive accuracy with an R-squared of 75% for import predictions.
                Identified key features driving trade flows, such as GDP and population of trading partners, exchange rates, and distance.
-- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Report.pdf)  
+- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Agricultural%20Trade%20Flows%20Prediction%20report.docx)  
 - *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
 
 ## All Projects  
