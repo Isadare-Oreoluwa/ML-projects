@@ -60,18 +60,11 @@ Ensure the CSV file is correctly placed and referenced in the code for successfu
 
 4. **Run the Scripts:**  
    Execute the analysis script to process the data and generate results:  
-   ```bash
-   python analysis.py
-   ```
-   For visualizations, run:  
-   ```bash
-   python visualisation.py
-   ```
 
 ## Results and Insights
 - **Best Model for Imports:** Random Forest  
   - R-squared: 0.75  
-  - MSE: \(3.6 \times 10^{15}\)  
+  - MSE: 3.60699E+15
 - **Key Factors Influencing Trade:**  
   - GDP and population of trading partners.  
   - Exchange rates and distance.  
@@ -82,5 +75,5 @@ Ensure the CSV file is correctly placed and referenced in the code for successfu
 - For any issues or questions, feel free to raise an issue in this repository or reach out via email.
 
 ## References
-- **Report:** World Integrated Trade Solutions (WITS), World Development Indicators (WDI).  
-- **Code and Data:** [GitHub Link](#).
+- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Report.pdf)  
+- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code) 
