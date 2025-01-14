@@ -20,7 +20,7 @@ Welcome to my collection of Machine Learning projects! This repository features 
   - *Machine Learning Models:* Linear Regression, Random Forest, and Gradient Boosting for predictive analysis.  
   - *Results:* Achieved a predictive accuracy of 85% and identified critical factors influencing trade.  
 - *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Report.pdf)  
-- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/blob/main/Projects/Agricultural-Trade-Flow-Analysis/Data.zip)  
+- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
 
 ## All Projects  
 Explore all my machine learning projects by visiting the *[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects)*. Each project includes a detailed report, code, and datasets used for analysis.
