@@ -32,7 +32,7 @@ Explore all my machine learning projects by visiting the *[Projects Folder](http
    - Browse the repository to explore different machine learning projects.  
    - Click on individual folders to view the code, datasets, and reports directly on GitHub or download them for offline use.  
 
-- *How to Download Files:
+- *How to Download Files:*
   If you're unable to download individual files directly from GitHub, you can follow these alternative methods:
   - *Download the Entire Repository as a ZIP File:*  
     1. Go to the repository page.  
