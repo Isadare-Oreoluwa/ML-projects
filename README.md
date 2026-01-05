@@ -4,52 +4,104 @@
 1. [Introduction](#introduction)  
 2. [Featured Projects](#featured-projects)  
    - [Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners](#predicting-agricultural-trade-flow-between-nigeria-and-its-trading-partners)  
+   - [Financial & Predictive Stock Analysis](#leveraging-machine-learning-for-financial-predictive-stock-analysis)  
 3. [All Projects](#all-projects)  
 4. [Getting Started](#getting-started)  
 5. [Contact](#contact)  
 
+---
+
 ## Introduction  
-Welcome to my collection of Machine Learning projects! This repository features a range of machine learning applications, including predictive modeling, sentiment analysis, and data-driven insights. Each project demonstrates my proficiency in data preprocessing, model development, evaluation, and extracting actionable insights.
+Welcome to my collection of **Machine Learning projects**! This repository features practical applications of machine learning, including:
+
+- Predictive modeling  
+- Time-series forecasting  
+- Data-driven insights  
+
+Each project demonstrates my proficiency in:
+
+- Data collection, cleaning, and preprocessing  
+- Feature engineering  
+- Model development and evaluation  
+- Extracting actionable insights and reporting results  
+
+These projects serve as both a portfolio of my work and a resource for learning ML applications in real-world scenarios.
+
+---
 
 ## Featured Projects  
 
-### Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners  
-- *Description:* A comprehensive project leveraging machine learning techniques to predict agricultural trade flows between Nigeria and its key trading partners. This project explores how factors such as agricultural import/export values, GDP, population, and other features influence trade patterns. By analyzing data from 1996 to 2021, the project provides actionable insights to enhance Nigeria's agricultural trade policies and competitiveness. 
-- *Key Highlights:*  
-  - *Dataset:* Trade data spanning 1996–2021 from 70 trading partners across Africa, Europe, Asia, and the Americas.
-  - *Machine Learning Models:* Linear Regression (with Ridge and Lasso variants), Random Forest, Gradient Boost Regression, Neural Networks.  
-  - *Results:* Random Forest achieved the highest predictive accuracy with an R-squared of 75% for import predictions.
-               Identified key features driving trade flows, such as GDP and population of trading partners, exchange rates, and distance.
-- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Agricultural%20Trade%20Flows%20Prediction%20report.docx)  
-- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
+### Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners
+- **Description:**  
+  Predict agricultural trade flows between Nigeria and 70 international trading partners using ML. Explores GDP, population, trade values, exchange rates, and distance as features. Data spans **1996–2021**, covering Africa, Europe, Asia, and the Americas.  
+- **Key Highlights:**  
+  - **Dataset:** Trade data for 70 countries, 1996–2021  
+  - **Models:** Linear Regression (OLS, Ridge, Lasso), Random Forest, Gradient Boosting, Neural Networks  
+  - **Results:**  
+    - Random Forest achieved highest accuracy (**R² = 75%** for imports)  
+    - Identified key drivers: GDP, population, exchange rates, distance  
+- **Report:** [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Agricultural%20Trade%20Flows%20Prediction%20report.pdf)  
+- **Code & Data:** [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
+
+---
+
+### Financial & Predictive Stock Analysis
+- **Description:**  
+  Analyze financial performance and predict stock price movements for listed companies using machine learning. Combines EDA, linear and non-linear modeling, and predictive ranking to identify financial drivers.  
+- **Key Highlights:**  
+  - **Dataset:** Comprehensive financial dataset from [Kaggle](https://www.kaggle.com/datasets/pacificrm/financial-sheets), including balance sheets, P&L, cash flows, ratios, and stock prices  
+  - **Models:** Linear Regression, Ridge/Lasso, Random Forest, Gradient Boosting, XGBoost, MLP Neural Network  
+  - **Results:**  
+    - Best performing model: Random Forest Regressor (**R² ~ 0.23**, RMSE ~ 6.05)  
+    - Key drivers of stock price changes: Market Capitalization, ROCE, ROA, Debt-to-Equity Ratio  
+- **Report:** [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Compehensive%20Financial%20Analysis/Comprehensive%20Financial%20Analysis%20Report.pdf)  
+- **Code & Data:** [Available in this repository](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Compehensive%20Financial%20Analysis/Data%20and%20Code)  
+
+---
 
 ## All Projects  
-Explore all my machine learning projects by visiting the *[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects)*. Each project includes a detailed report, code, and datasets used for analysis.
+Explore all machine learning projects in the **[Projects Folder](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects)**. Each project includes:
+
+- Detailed reports  
+- Code scripts  
+- Datasets  
+
+This allows you to review, replicate, or extend any project for learning or research purposes.
+
+---
 
 ## Getting Started  
 
-- *Viewing the Projects:*  
-   - Browse the repository to explore different machine learning projects.  
-   - Click on individual folders to view the code, datasets, and reports directly on GitHub or download them for offline use.  
+### Viewing the Projects
+- Browse the repository to explore different machine learning projects  
+- Open individual folders to access code, datasets, and reports directly on GitHub or download them for offline use  
 
-- *How to Download Files:*
-  If you're unable to download individual files directly from GitHub, you can follow these alternative methods:
-  - *Download the Entire Repository as a ZIP File:*  
-    1. Go to the repository page.  
-    2. Click the green **Code** button at the top right of the page.  
-    3. Select **Download ZIP** from the dropdown menu.  
-    4. Once the ZIP file is downloaded, unzip it to access all the files.  
+### Downloading Files
+If you're unable to download individual files from GitHub:
 
-  - *Clone the Repository Using Git:*  
-    If Git is installed on your system:  
-    1. Copy the repository URL from the **Code** button (the HTTPS link).  
-    2. Open your terminal or command prompt.  
-    3. Type the following command:  
-       ```bash  
-       git clone https://github.com/Isadare-Oreoluwa/ML-projects.git  
-       ```  
-    4. This will download all the contents of the repository to your local machine.  
+1. **Download Entire Repository as ZIP**  
+   - Go to the repository page  
+   - Click the green **Code** button at the top right  
+   - Select **Download ZIP**  
+   - Unzip the file to access all projects  
 
-## Contact  
+2. **Clone the Repository Using Git**  
+   If Git is installed:  
+   ```bash
+   git clone https://github.com/Isadare-Oreoluwa/ML-projects.git
 
-For any questions or inquiries, feel free to reach out to me via [email](mailto:isadare.ore@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/oreoluwa-isadare).
+* This will download all contents of the repository to your local machine
+
+---
+
+## Contact
+
+For any questions or inquiries:
+
+* **Email:** [isadare.ore@gmail.com](mailto:isadare.ore@gmail.com)
+* **LinkedIn:** [Oreoluwa Isadare](https://www.linkedin.com/in/oreoluwa-isadare)
+
+---
+
+*Thank you for exploring my machine learning projects! I hope they serve as a useful reference for learning, research, or practical applications.*
+
