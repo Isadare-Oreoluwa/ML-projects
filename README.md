@@ -45,7 +45,7 @@ These projects serve as both a portfolio of my work and a resource for learning 
 
 ---
 
-### Financial & Predictive Stock Analysis
+### Leveraging Machine Learning for Financial & Predictive Stock Analysis
 - **Description:**  
   Analyze financial performance and predict stock price movements for listed companies using machine learning. Combines EDA, linear and non-linear modeling, and predictive ranking to identify financial drivers.  
 - **Key Highlights:**  
