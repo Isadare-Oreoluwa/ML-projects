@@ -1,79 +1,153 @@
-# Leveraging Machine Learning for Predicting Agricultural Trade Flows
+# Leveraging Machine Learning for Financial & Predictive Stock Analysis
 
 ## Overview
-This project demonstrates the application of machine learning techniques to predict agricultural trade flows between Nigeria and its trading partners. It identifies key factors influencing trade and evaluates the performance of various algorithms in predicting trade patterns. Users are encouraged to explore the code and customize it to suit their data and file paths.
+
+This project applies statistical analysis and machine learning techniques to analyze financial performance and predict stock price movements for a set of listed companies. It combines exploratory data analysis, linear and non-linear modeling, and predictive ranking to identify key financial drivers of stock performance and generate actionable insights for investment decision-making.
+
+Users are encouraged to explore the code, review the report, and adapt the workflow to their own datasets or investment strategies.
+
+---
 
 ## Dataset Description
-The analysis uses a CSV file containing trade-related data, including:  
-- **Trade Metrics:** Import and export values in USD.  
-- **Economic Indicators:** GDP and exchange rates.  
-- **Demographics:** Population data for Nigeria and its trading partners.  
-- **Geographical Factors:** Distance, landlocked status, and shared languages.
 
-Ensure the CSV file is correctly placed and referenced in the code for successful execution.
+The analysis uses a comprehensive financial dataset obtained from  [**kaggle**](https://www.kaggle.com/datasets/pacificrm/financial-sheets), containing time-series financial and market data for multiple companies.
+
+### Data Includes:
+
+- **Financial Statements:** Annual and quarterly profit & loss, balance sheet, and cash flow data  
+- **Market Data:** Stock prices and market capitalization  
+- **Financial Ratios:** Profitability, leverage, efficiency, and growth metrics  
+- **Time Dimension:** Financials at T0 and corresponding market prices at T1  
+
+### Dataset Structure:
+
+- **Observations:** ~3,000 company-quarter records  
+- **Features:** 9 key financial and operational indicators  
+- **Target Variable:** `price_change_%` (quarterly percentage change in stock price)  
+- **Additional Metadata:** Company name and reporting date  
+
+### Key Features Used:
+
+- Return on Capital Employed (ROCE, capped for outliers)  
+- Operating Profit Margin (OPM)  
+- Asset Turnover (ATO)  
+- Return on Assets (ROA)  
+- Debt-to-Equity Ratio  
+- EPS Growth (3 Years)  
+- PEG Ratio  
+- Market Capitalization  
+- Composite Efficiency Score  
+
+> Ensure the dataset is correctly placed and referenced in the code before execution.
+
+---
 
 ## Machine Learning Approach
+
 ### Algorithms Used:
-- Linear Regression (including Ridge and Lasso variants)  
-- Random Forest  
-- Gradient Boost Regression  
-- Neural Networks  
+
+- Linear Regression (OLS)  
+- Ridge, Lasso, and Elastic Net Regression  
+- Random Forest Regressor  
+- Gradient Boosting Regression  
+- XGBoost  
+- Multi-Layer Perceptron (MLP) Neural Network  
 
 ### Evaluation Metrics:
+
 - R-squared (R²)  
-- Mean Squared Error (MSE)  
 - Root Mean Squared Error (RMSE)  
+- Mean Absolute Error (MAE)  
+
+> Cross-validation and hyperparameter tuning were performed using `GridSearchCV`.
+
+---
 
 ## Setup and Usage
-### Prerequisites:
-- Python 3.x installed on your system.  
-- Required libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`.  
 
-### Steps:
-1. **Clone this Repository:**  
-   Download the project files, including the scripts and CSV data.  
-   ```bash
-   git clone https://github.com/Isadare-Oreoluwa/ml-projects.git
-   cd ml-projects
-   ```
+### Prerequisites
 
-2. **Install Dependencies:**  
-   Manually install the required libraries:  
-   ```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
-   ```
+- Python 3.x  
+- Required libraries:  
+  `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `xgboost`  
 
-3. **Adjust File Locations:**  
-   - Open the analysis and visualization scripts in a text editor.  
-   - Locate where the CSV file is referenced.  
-   - Update the file path to match the location of your dataset.  
+### Steps
 
-   Example:  
-   If your dataset is stored in `C:/datasets/trade_data.csv`, change:  
-   ```python
-   data = pd.read_csv('data/trade_data.csv')
-   ```
-   To:  
-   ```python
-   data = pd.read_csv('C:/datasets/trade_data.csv')
-   ```
+1. **Clone this Repository**
 
-4. **Run the Scripts:**  
-   Execute the analysis script to process the data and generate results:  
+```bash
+git clone https://github.com/Isadare-Oreoluwa/ml-projects.git
+cd ml-projects
+````
+
+2. **Install Dependencies**
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+```
+
+3. **Adjust File Locations**
+
+* Open the analysis scripts.
+* Locate where the CSV file is referenced.
+* Update the file path to your local dataset location.
+
+Example:
+
+```python
+data = pd.read_csv('data/financial_data.csv')
+```
+
+4. **Run the Scripts**
+
+Execute the analysis scripts to:
+
+* Perform exploratory data analysis (EDA)
+* Train the machine learning models
+* Generate predictions
+
+---
 
 ## Results and Insights
-- **Best Model for Imports:** Random Forest  
-  - R-squared: 0.75  
-  - MSE: 3.60699E+15
-- **Key Factors Influencing Trade:**  
-  - GDP and population of trading partners.  
-  - Exchange rates and distance.  
 
+### Best Performing Model
+
+**Random Forest Regressor**
+
+* R-squared: ~0.23
+* RMSE: ~6.05
+
+### Key Drivers of Stock Price Changes
+
+* Market Capitalization
+* Return on Capital Employed (ROCE)
+* Return on Assets (ROA)
+* Debt-to-Equity Ratio
+
+### Key Findings
+
+* Linear models show limited predictive power, indicating weak linear relationships between financial metrics and short-term price movements.
+* Tree-based models capture non-linear interactions and provide more reliable predictions.
+* Profitability metrics are strongly interrelated, while leverage and liquidity indicators exhibit weaker linear correlations.
+
+### Predictive Output
+
+* The model generates a ranked list of stocks with the highest predicted quarterly price increases using the latest available data.
+
+---
 
 ## Notes
-- The code is provided as a starting point; users should edit paths to fit their local environment.
-- For any issues or questions, feel free to raise an issue in this repository or reach out via email.
+
+* This project emphasizes **methodological rigor**, including outlier treatment, feature engineering, scaling decisions, and residual diagnostics.
+* The code is designed as a flexible framework; users can expand it with macroeconomic variables or time-series models.
+* Results should be interpreted as **decision-support tools**, not financial advice.
+
+---
+
+
 
 ## References
-- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Agricultural%20Trade%20Flows%20Prediction%20report.docx)  
-- *Code and Data:* [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code) 
+- *Report:* [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Compehensive%20Financial%20Analysis/Comprehensive%20Financial%20Analysis%20Report.pdf)
+- *Code & Data:* [Available in this repository](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Compehensive%20Financial%20Analysis/Data%20and%20Code)
+
+
