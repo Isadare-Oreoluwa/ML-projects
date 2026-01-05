@@ -4,7 +4,7 @@
 1. [Introduction](#introduction)  
 2. [Featured Projects](#featured-projects)  
    - [Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners](#predicting-agricultural-trade-flow-between-nigeria-and-its-trading-partners)  
-   - [Financial & Predictive Stock Analysis](#leveraging-machine-learning-for-financial-&-predictive-stock-analysis)  
+   - [Financial & Predictive Stock Analysis](#leveraging-machine-learning-for-financial-predictive-stock-analysis)  
 3. [All Projects](#all-projects)  
 4. [Getting Started](#getting-started)  
 5. [Contact](#contact)  
