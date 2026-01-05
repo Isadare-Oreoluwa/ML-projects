@@ -31,6 +31,7 @@ These projects serve as both a portfolio of my work and a resource for learning 
 
 ## Featured Projects  
 
+<a name="agricultural-trade-flow"></a>
 ### Predicting Agricultural Trade Flow Between Nigeria and Its Trading Partners
 - **Description:**  
   Predict agricultural trade flows between Nigeria and 70 international trading partners using ML. Explores GDP, population, trade values, exchange rates, and distance as features. Data spans **1996–2021**, covering Africa, Europe, Asia, and the Americas.  
@@ -43,8 +44,7 @@ These projects serve as both a portfolio of my work and a resource for learning 
 - **Report:** [Detailed Report](https://github.com/Isadare-Oreoluwa/ML-projects/blob/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Agricultural%20Trade%20Flows%20Prediction%20report.pdf)  
 - **Code & Data:** [Download Files](https://github.com/Isadare-Oreoluwa/ML-projects/tree/ML-main/Projects/Predicting%20Agricultural%20trade%20flow%20between%20Nigeria%20and%20her%20trading%20partners/Data%20and%20Code)  
 
----
-
+<a name="financial-stock-analysis"></a>
 ### Leveraging Machine Learning for Financial & Predictive Stock Analysis
 - **Description:**  
   Analyze financial performance and predict stock price movements for listed companies using machine learning. Combines EDA, linear and non-linear modeling, and predictive ranking to identify financial drivers.  
@@ -89,6 +89,7 @@ If you're unable to download individual files from GitHub:
    If Git is installed:  
    ```bash
    git clone https://github.com/Isadare-Oreoluwa/ML-projects.git
+````
 
 * This will download all contents of the repository to your local machine
 
